@@ -1,0 +1,18 @@
+<%- include('partials/header')%>
+    <div class="container text-center player pchange mx-auto mt-2 mb-2">
+        <h1 id="inf"><%=data.Title%></h1>
+        <p><span id="inf">Date: </span><%=data.Released%></p>
+        <img class="img-fluid rounded" src="<%=data.Poster%>" alt="">
+        <p><span id="inf">Genre:</span> <%=data.Genre%></p>
+        <p><span id="inf">Director: </span><%=data.Director%></p>
+        <p><span id="inf">Actors: </span><%=data.Actors%></p>
+        <p><span id="inf">Plot: </span><%=data.Plot%></p>
+        <p><span id="inf">Awards: </span><%=data.Awards%></p>
+        <p><span id="inf">BoxOffice Collection: </span><%=data.BoxOffice%></p>
+        <p><span id="inf">IMDb Rating: </span><%=data.imdbRating%></p>
+        <a href="/"><button class="btn btn-lg botn ml-1 mb-2">Search New Movie></button></a>
+    </div>
+    <div class="foot text-center" id="fut">
+        <a href="https://www.instagram.com/ashutoshshukla__"><h3>@ashutoshshukla__</h3></a>
+    </div>
+<%- include('partials/footer')%>

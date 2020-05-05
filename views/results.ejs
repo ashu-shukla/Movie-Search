@@ -1,0 +1,24 @@
+<%- include('partials/header')%>
+<div class="container-fluid text-center">
+   <div class="row">
+      <% data.Search.forEach(function(movie){ %>
+      <div class="col col-md-6 col-lg-6 col-xl-4">
+         <div class="player mx-auto" id="mov">
+             <div>
+               <h1><%=movie.Title%></h1>
+               <div class="d-flex flex-column justify-content-center">
+                 <img class="img-fluid rounded" src="<%=movie.Poster%>" alt="">
+                 <div>
+                  <form class="form-group" action="/search/results/movie" method="GET">
+                     <button type="submit" name="movie" value="<%=movie.imdbID%>" class="btn btn-md botn ml-1 mt-2">Learn More ></button>
+                 </form>
+                 </div>
+             </div>
+             </div>
+      </div>
+      </div>
+      <%})%>
+ <div class="foot text-center" id="fut">
+         <a href="https://www.instagram.com/ashutoshshukla__"><h3>@ashutoshshukla__</h3></a>
+ </div>
+<%- include('partials/footer')%>

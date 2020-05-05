@@ -1,0 +1,25 @@
+<%- include('partials/header')%>
+   <div class="head text-center">
+        <h1> SIMPLE DATABASE</h1>
+        <h2>FOR MOVIES</h2>
+    </div>
+    <div class="wrapper text-center">
+        <div class="player mx-auto d-flex align-items-center justify-content-center">
+            <div>
+              <h1>Search for a Movie:</h1>
+              <div class="d-flex justify-content-center">
+                <form class="form-inline" action="/search/results" method="GET">
+                    <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control dash" name="search" placeholder="Search Here"">
+                    </div>
+                    <button type="submit" class="btn btn-md botn ml-1 mb-2">Search</button>
+                </form>
+            </div>
+            </div>
+          </div>
+    </div>
+    <div class="foot text-center">
+        <a href="https://www.instagram.com/ashutoshshukla__"><h3>@ashutoshshukla__</h3></a>
+    </div>
+    <%- include('partials/footer')%>
+
