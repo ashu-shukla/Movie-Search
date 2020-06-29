@@ -14,7 +14,7 @@ app.get('/search',function(req,res){
 
 app.get('/search/results',function(req,res){
     var query=req.query.search;
-    if(query=='mushy bear'){
+    if(query=='mushy bear'||'Mushy Bear'||'Mushy bear'){
         res.render('special');
     }else{
             var url='http://www.omdbapi.com/?apikey=thewdb&s='+query;
@@ -48,6 +48,7 @@ app.get('/search/results/movie',function(req,res){
     });
 });
 
-app.listen(process.env.PORT,process.env.IP,function(){
+PORT = 3000||process.env.PORT;
+app.listen(PORT,process.env.IP,function(){
     console.log("Server online!");
 });
