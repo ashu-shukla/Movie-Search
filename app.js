@@ -48,7 +48,7 @@ app.get('/search/results/movie',function(req,res){
     });
 });
 
-PORT = 3000||process.env.PORT;
-app.listen(PORT,process.env.IP,function(){
+var Port = 3000||process.env.PORT;
+app.listen(Port,process.env.IP,function(){
     console.log("Server online!");
 });
