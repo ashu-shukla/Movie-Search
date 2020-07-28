@@ -14,7 +14,8 @@ app.get('/search',function(req,res){
 
 app.get('/search/results',function(req,res){
     var query=req.query.search;
-    if(query=='mushy bear'||'Mushy Bear'||'Mushy bear'){
+    console.log(query);
+    if(query==('mushy bear'||'Mushy Bear'||'Mushy bear')){
         res.render('special');
     }else{
             var url='http://www.omdbapi.com/?apikey=thewdb&s='+query;
